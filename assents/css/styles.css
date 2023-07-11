@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #337ab7;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-image: url(https://thumbs.dreamstime.com/b/ilustraci%C3%B3n-de-fondo-azul-abstracto-para-fondos-festivos-y-pantalla-brillante-decoraciones-anuncios-interesantes-en-p%C3%A1ginas-web-233498254.jpg);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://thumbs.dreamstime.com/b/ilustraci%C3%B3n-de-fondo-azul-abstracto-para-fondos-festivos-y-pantalla-brillante-decoraciones-anuncios-interesantes-en-p%C3%A1ginas-web-233498254.jpg);
+    color: white;
+}
+
+.logo-container {
+    opacity: 0;
+    animation: fade-in-out 5s infinite;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.person-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.person-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: rotate(360deg);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.whatsapp-button {
+    margin-bottom: 20px;
+}
+
+.whatsapp-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.whatsapp-button a:hover {
+    border-color: #25d366;
+}
+
+.card-footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-footer a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    .person-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery img {
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .person-photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .person-name h2 {
+        font-size: 18px;
+    }
+
+    .gallery img {
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+    }
+}
+
+.circular-logo {
+    border-radius: 50%;
+}
